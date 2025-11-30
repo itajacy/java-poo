@@ -13,7 +13,7 @@ public class Heroi extends Jogador {
     }
 
     public Heroi(int x, int y) {
-        super(x,y,3,1.5);
+        super(x,y,3,1.5,"Heroi");
     }
 
 

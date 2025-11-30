@@ -8,17 +8,18 @@ import heranca.jogo.model.Monstro;
 public class TesteJogo {
     static void main() {
 
-        Jogador j1 = new Heroi(20,50);
-        Jogador j2 = new Monstro(21,50);
+        Jogador heroi = new Heroi(20,50);
+//        Jogador monstro = new Monstro(21,50);
+        Jogador monstro = new Jogador(21,50);  // Jogador dá menos dano que Monstro
 
 //        System.out.println(j1.mover(Direcao.NORTE));
 
-        j1.atacar(j2);
-        j2.atacar(j1);
+        heroi.atacar(monstro);
+        monstro.atacar(heroi);
 
 
-        System.out.println(j1);
-        System.out.println(j2);
+        System.out.println(heroi);
+        System.out.println(monstro);
 
     }
 }

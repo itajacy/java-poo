@@ -7,6 +7,7 @@ package heranca.jogo.model;
 
 //@SuppressWarnings("all")
 public class Jogador {
+    private final String nome;
     private int x = 0;
     private int y = 0;
     private int passo = 1;
@@ -14,18 +15,19 @@ public class Jogador {
     private double forca = 0.5; // quanto de dano o jogador dá em um ataque
 
     public Jogador() {
-        this(0,0,1, 0.5);
+        this(0,0,1, 0.5, "Jogador");
     }
 
     public Jogador(int x, int y) {
-       this(x,y,1, 0.5);
+       this(x,y,1, 0.5,"Jogador");
     }
 
-    public Jogador(int x, int y, int passo, double forca) {
+    public Jogador(int x, int y, int passo, double forca, String nome) {
         this.x = x;
         this.y = y;
         this.passo = passo;
         this.forca = forca;
+        this.nome = nome;
     }
 
     public boolean atacar(Jogador oponente) {
@@ -67,7 +69,7 @@ public class Jogador {
 
     @Override
     public String toString() {
-        return "Jogador{" +
+        return nome + "{" +
                 "x=" + x +
                 ", y=" + y +
                 ", vida=" + vida +
