@@ -25,6 +25,7 @@ public class Jogador {
         this.x = x;
         this.y = y;
         this.passo = passo;
+        this.forca = forca;
     }
 
     public boolean atacar(Jogador oponente) {
