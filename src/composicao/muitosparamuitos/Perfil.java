@@ -9,7 +9,7 @@ public class Perfil {
     // para termos uma relação Bidirecional de muitos para muitos
     // List<Usuario> usuarios = new ArrayList<>();
 
-    
+
 
     public Perfil(int id, String nome) {
         this.id = id;
