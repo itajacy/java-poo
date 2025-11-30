@@ -2,20 +2,23 @@ package heranca.jogo.teste;
 
 import heranca.jogo.model.Direcao;
 import heranca.jogo.model.Heroi;
-import heranca.jogo.model.Jogador;
 import heranca.jogo.model.Monstro;
 
 public class TesteJogo {
     static void main() {
 
-        Jogador heroi = new Heroi(20,50);
+        Heroi heroi = new Heroi(21,50);
 //        Jogador monstro = new Monstro(21,50);
-        Jogador monstro = new Jogador(21,50);  // Jogador dá menos dano que Monstro
+        Monstro monstro = new Monstro(23,50);  // Jogador dá menos dano que Monstro
 
 //        System.out.println(j1.mover(Direcao.NORTE));
 
-        heroi.atacar(monstro);
-        monstro.atacar(heroi);
+        boolean heroiAcertou =  heroi.atacar(monstro);
+        System.out.println(heroiAcertou ? heroi.gritar() : "");
+         boolean monstroAcertou =  monstro.atacar(heroi);
+        System.out.println(monstroAcertou ? monstro.gritar() : "");
+
+
 
 
         System.out.println(heroi);

@@ -13,6 +13,10 @@ public class Monstro extends Jogador{
         super(x,y,1,5, "Monstro");
     }
 
+    @Override
+    public String gritar() {
+        return "Arrrrrhhhhrrrr";
+    }
 
 
 }

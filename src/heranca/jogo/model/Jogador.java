@@ -6,7 +6,7 @@ package heranca.jogo.model;
 * */
 
 //@SuppressWarnings("all")
-public class Jogador {
+public abstract class Jogador {
     private final String nome;
     private int x = 0;
     private int y = 0;
@@ -66,6 +66,10 @@ public class Jogador {
         }
         return false;
     }
+
+    // comportamento abstrato deverá ser implmentado nas
+    // classes concretas: Heroi / Monstro
+    public abstract String gritar();
 
     @Override
     public String toString() {

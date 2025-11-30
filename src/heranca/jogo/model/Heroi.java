@@ -16,6 +16,17 @@ public class Heroi extends Jogador {
         super(x,y,3,1.5,"Heroi");
     }
 
+    @Override
+    public String gritar() {
+        return "Ahuuu";
+    }
+
+
+    // sobrescrevendo o metodo toString da classe pai
+//    @Override
+//    public String toString() {
+//        return super.toString();
+//    }
 
 
 }
