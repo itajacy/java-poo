@@ -22,23 +22,29 @@ public class Pessoa {
 
     // para usar o metodo comer Tapioca, ele precisará ser criado aqui, por isso
     // o polimorfismo é chamado estático
-    public void comer(Arroz arroz) {
-        peso += arroz.getPeso();
+//    public void comer(Arroz arroz) {
+//        peso += arroz.getPeso();
+//    }
+//
+//    public void comer(Feijao feijao) {
+//        peso += feijao.getPeso();
+//    }
+//
+//    public void comer(Sorvete sorvete) {
+//        peso += sorvete.getPeso();
+//    }
+//
+//
+//    public void comer(Tapioca tapioca) {
+//        peso += tapioca.getPeso();
+//    }
+
+
+    // POLIMORFISMO DINAMICO
+    // nao precisa alterar a classe
+    // criando novos metodos
+    public void comer(Comida comida) {
+        peso += comida.getPeso();
     }
-
-    public void comer(Feijao feijao) {
-        peso += feijao.getPeso();
-    }
-
-    public void comer(Sorvete sorvete) {
-        peso += sorvete.getPeso();
-    }
-
-
-    public void comer(Tapioca tapioca) {
-        peso += tapioca.getPeso();
-    }
-
-
 
 }
